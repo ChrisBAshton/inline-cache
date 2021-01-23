@@ -44,7 +44,7 @@ Now the user refreshes the page, clicks on a link, or simply returns to the site
    ```
 1. On the client, the page begins rendering, and initialises the service worker.
 1. The service worker retrieves the manifest from the cache to retrieve a list of resources and versions that have been cached already.
-1. The service worker intercepts all requests. For each in turn, it checks if the resource exists in the cache. If it does, it fetches it from the cache, otherwise it fetches it over HTTP as normal.
+1. The service worker intercepts all requests. For each in turn, it checks if the resource exists in the manifest. If it does, it fetches it from the cache, otherwise it fetches it over HTTP as normal.
 
 ### What happens if the cache is cleared?
 
